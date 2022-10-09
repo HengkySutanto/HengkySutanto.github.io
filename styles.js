@@ -47,7 +47,7 @@ function showMole() {
 
 function hideMole(randIndex, element) {
     var minTimeout = 200,
-        maxTimeout = 800;
+        maxTimeout = 400;
     var randIndex = Math.floor(Math.random() * (minTimeout - maxTimeout + 1) + maxTimeout);
 
     function hide() {
