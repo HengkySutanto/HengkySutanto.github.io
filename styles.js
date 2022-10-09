@@ -1,4 +1,4 @@
-let startedGameTime = new Date();
+let startedGameTime = 0;
 let endGameTime = 0;
 let lastTimeMissedMole = 0;
 let violationKlicked = 0
@@ -6,12 +6,12 @@ let debounce = false
 let moleHit = false
 let numberofClicks = 0
 
-window.onload = function () {
-};
+// window.onload = function () {
+// };
 
 function startGame () {
     startedGameTime = new Date();
-    showElapsedTime()
+    // showElapsedTime()
     startAnimate();
 }
 
@@ -70,12 +70,12 @@ function hitMole(event) {
 }
 
 function missedMole() {
-    if (startedGameTime > 0) {
+    let currentTime = new Date()
+    if (startedGameTime !== 0 ) {
         if(!debounce) {
             numberofClicks += 1
             showClicks()
         }
-        console.log(numberofClicks)
         if ((new Date()).getTime() - lastTimeMissedMole < 1000) {
             violationKlicked += 1
             lastTimeMissedMole = (new Date()).getTime()
