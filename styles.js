@@ -53,7 +53,7 @@ function hideMole(randIndex, element) {
     function hide() {
         element.classList.add('hidden');
     }
-    setTimeout(hide, 1000);
+    setTimeout(hide, randIndex);
 }
 
 function hitMole(event) {
