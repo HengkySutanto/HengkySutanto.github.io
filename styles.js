@@ -11,7 +11,7 @@ let numberofClicks = 0
 
 function startGame () {
     startedGameTime = new Date();
-    // showElapsedTime()
+    showElapsedTime()
     startAnimate();
 }
 
