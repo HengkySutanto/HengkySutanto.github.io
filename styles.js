@@ -25,9 +25,9 @@ function restart () {
 
 function startAnimate() {
     if (!moleHit) {
-        var min = 2,
-            max = 5;
-        var rand = Math.floor(Math.random() * (max - min + 1) + min); //Generate Random number between 2-5
+        var min = 1,
+            max = 3;
+        var rand = Math.floor(Math.random() * (max - min + 1) + min);
         if (!debounce) {
             showMole()
         }
